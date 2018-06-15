@@ -5,42 +5,42 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
     <title>First page</title>
-</head>
-
-<body style="background-color:lightcyan;">
     <style>
         header {
             width: 100%;
-            background: #D8E3AB;
-            height: 100%;
+            background: rgb(31, 10, 58);
+            height: 90px;
+            border-radius: 10px;
         }
 
         .myHeader {
             color: #ff0099;
             padding: center;
-            padding-left: 200px;
+            padding-left: 100px;
             font-family: verdana;
-            font-size: 40px;
+            font-size: 50px;
         }
 
         .contant {
-            width: 500px;
+            width: 1500px;
             min-height: 1000px;
             background: rgb(171, 202, 227);
             font-family: verdana;
-            margin: 30px auto;
+            margin-left: 10px;
             border: solid 1px black;
-
+            border-radius: 10px;
+            float: left;
         }
 
         .sidebar {
             background: cadetblue;
-            margin-top:100px;
-            padding: 5px;
-            width: 200px;
-            height: 1000;
+
+            width: 250px;
             float: left;
-            position: relative;
+            font-family: Verdana;
+            height: 1000px;
+            border-radius: 10px;
+            font-size: 20px;
         }
 
         table,
@@ -51,28 +51,50 @@
         }
     </style>
 
+</head>
 
-    <header>
-        <div class="myHeader"> My hystory of studying English</div>
-        <div align="right" ;>
-            <form display="inline-block" ;>
-                Login:
-                <input type="text" name="Login"> Password:
-                <input type="text" name="Password">
-                <input type="submit" value="Sign in">
-            </form>
-        </div>
-    </header>
-
-
-
+<body style="background-color:lightcyan;">
 
     <div id="container">
+        <header>
+            <div class="myHeader" style="float: left; float: center;" ;> My hystory of studying English</div>
+            <div align="right" ; style="padding-top: 1px">
+                <form display="inline-block" style="color: rgb(163, 9, 9); float: right; margin: 30px">
+                    Login:
+                    <input type="text" name="Login"> Password:
+                    <input type="text" name="Password">
+                    <input type="submit" value="Sign in">
+                </form>
+            </div>
+        </header>
         <nav>
             <h1 align="center" style="color:#10ee6d; font-size:50px">Title</h1>
-            <br>
-
+            
         </nav>
+        <div class="sidebar">
+            <div> <h2 align="center">About</h2> 
+            <p align="justify">   We stumble upon English words every day.
+                 Here you can make up them and train. The front end part was built with Bootstrap and React.
+                  The back end was created with Express and MongoDB.</p></div>
+            <ul>
+                <li>
+                    <a href="Title.html" title="Заголовок">Title</a>
+                </li>
+                <li>
+                    <a href="games.html" title="Начни играть">Games</a>
+                </li>
+                <li>
+                    <a href="newStory.html" title="История">New story</a>
+                </li>
+                <li>
+                    <a href="justWord.html" title="Только слово">Just word</a>
+                </li>
+                <li>
+                    <a href="listOfWords" title="Список слов">List of worlds</a>
+                </li>
+            </ul>
+
+        </div>
         <div class="contant" ;>
             I should write here something
 
@@ -196,27 +218,8 @@
                 </table>
             </div>
         </div>
-        <div class="sidebar">
-            <ul>
-                <li>
-                    <a href="Title.html" title="Заголовок" .>Title</a>
-                </li>
-                <li>
-                    <a href="games.html" title="Начни играть">Games</a>
-                </li>
-                <li>
-                    <a href="newStory.html" title="История">New story</a>
-                </li>
-                <li>
-                    <a href="justWord.html" title="Только слово">Just word</a>
-                </li>
-                <li>
-                    <a href="listOfWords" title="Список слов">List of worlds</a>
-                </li>
-            </ul>
 
-        </div>
-
+    </div>
 
     </div>
 
